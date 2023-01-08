@@ -1,0 +1,38 @@
+.about-us__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 70px;
+}
+.about-us__header img {
+  width: 555px;
+  height: 518px;
+}
+.caption-small {
+  font-size: 24px;
+  color: #1ba0e2;
+  margin-bottom: 20px;
+}
+.caption-big {
+  color: #033537;
+  max-width: 372px;
+  line-height: 1.2;
+  font-size: 50px;
+}
+.description {
+  margin-bottom: 70px;
+}
+.description span {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+.policys {
+  border-bottom: none;
+  margin-bottom: 70px;
+}
+.policy-item:not(:last-child) {
+  border-right: none;
+}

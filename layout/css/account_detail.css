@@ -1,0 +1,131 @@
+.account-details {
+  margin-top: 40px;
+}
+.title-account {
+  font-size: 19px;
+  font-weight: 400;
+  color: #212b25;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+.name-account {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 28px;
+  color: #212b25;
+}
+.menu-account_item {
+  margin-bottom: 10px;
+}
+.menu-account_link {
+  font-weight: 400;
+  font-size: 14px;
+  color: #333;
+  transition: all 0.2s linear;
+}
+.menu-account_link:hover {
+  color: #1ba0e2;
+}
+.click {
+  color: #1ba0e2;
+}
+.account {
+  display: flex;
+  justify-content: space-between;
+  /* gap: 0 100px; */
+}
+.account-info_input {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px 20px;
+}
+.account-info .form-group label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.account-info .form-group {
+  margin-bottom: 10px;
+}
+.account-info .form-group .form-control {
+  width: 400px;
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid #d4d4d4;
+  display: block;
+}
+.account-info .form-group .form-control-file {
+  width: 400px;
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid #d4d4d4;
+  display: block;
+}
+.account-info .form-group .form-control:focus {
+  border: 1px solid #1ba0e2;
+}
+.account-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 100rem;
+}
+.btn {
+  padding: 8px 20px;
+  border: none;
+  outline: none;
+  background-color: #1ba0e2;
+  border: 1px solid #1ba0e2;
+  color: white;
+  border-radius: 4px;
+  transition: all 0.2s linear;
+}
+.btn:hover {
+  border: 1px solid #1ba0e2;
+  background-color: #fff;
+  color: #1ba0e2;
+}
+table {
+  border-collapse: collapse;
+}
+.my_cart,
+.my_cart tr,
+.my_cart td,
+.my_cart th {
+  /* border-collapse: collapse; */
+  border: 1px solid #ccc;
+}
+.my_cart td,
+.my_cart th {
+  padding: 10px;
+}
+.alert-success {
+  color: white;
+  background-color: #20e3b2;
+  padding: 5px 15px;
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+.dia_chi {
+  max-width: 145px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+}
+.btn-danger {
+  display: block;
+  color: white;
+  background-color: #f62682;
+  padding: 3px;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 4px;
+}

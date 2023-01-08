@@ -1,0 +1,2033 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Evo Tour</title>
+    <script
+      src="https://kit.fontawesome.com/91fe53bdda.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://npmcdn.com/flatpickr/dist/themes/material_blue.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-top">
+          <div class="header-logo">
+            <a href="index.html"><img src="./images/logo.png" alt="" /></a>
+          </div>
+          <form action="" method="post" class="header-searchs">
+            <div class="header-search">
+              <input
+                type="text"
+                placeholder="Nhập tên điểm đến hoặc thành phố bạn muốn tới"
+              />
+              <button type="submit">
+                <ion-icon name="search-outline"></ion-icon>
+              </button>
+            </div>
+          </form>
+          <div class="header-user">
+            <div class="evo-acount">
+              <a href="#">
+                <ion-icon name="person-outline" class="person"></ion-icon>
+                <span>Tài khoản</span>
+              </a>
+              <ul>
+                <li>
+                  <a href="dang_nhap.html">Đăng nhập</a>
+                </li>
+                <li>
+                  <a href="dang_ky.html">Đăng ký</a>
+                </li>
+              </ul>
+            </div>
+            <div class="evo-heart">
+              <a href="#">
+                <ion-icon name="heart-outline" class="heart"></ion-icon>
+                <span class="heart-text">Yêu thích</span>
+                <span class="quantity-icon">0</span>
+              </a>
+              <div class="top-wish-list-content">
+                <div class="added-products">
+                  <span class="favorites-message">
+                    Những tour thích <span class="favorites-count">(0)</span>
+                  </span>
+                  <div class="wish-list-small">
+                    <div class="emty-description">
+                      <span class="emty-icon">
+                        <i class="ico ico-favorite-heart"></i>
+                      </span>
+                      <div class="emty-text">
+                        <h3>
+                          Tour nào của chúng tôi bạn mong muốn sở hữu nhất?
+                        </h3>
+                        <p>Hãy thêm vào danh sách Tour yêu thích ngay nhé!</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#">
+              <ion-icon name="cart-outline" class="cart"></ion-icon>
+              <span class="quantity-icon">0</span>
+            </a>
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </div>
+      <div class="header-menu">
+        <div class="container">
+          <ul class="menu">
+            <li class="menu-item">
+              <a href="#" class="menu-link active">TRANG CHỦ</a>
+            </li>
+            <li class="menu-item">
+              <a href="about.html" class="menu-link">GIỚI THIỆU</a>
+            </li>
+            <li class="menu-item">
+              <a href="tour_du_lich.html" class="menu-link"
+                >TOUR DU LỊCH <ion-icon name="chevron-down-outline"></ion-icon
+              ></a>
+              <div class="menu__child">
+                <div class="menu__child-item">
+                  <h4><a href="">Miền Bắc</a></h4>
+                  <ul class="menu__child-list">
+                    <li><a href="">Sapa</a></li>
+                    <li><a href="">Hà Giang</a></li>
+                    <li><a href="">Cao Bằng - Bắc Kạn</a></li>
+                    <li><a href="">Mai Châu - Mộc Châu</a></li>
+                    <li><a href="">Yên Bái</a></li>
+                    <li><a href="">Ninh Bình</a></li>
+                    <li><a href="">Hạ Long</a></li>
+                    <li><a href="">Cát Bà</a></li>
+                  </ul>
+                </div>
+                <div class="menu__child-item">
+                  <h4><a href="">Miền Trung</a></h4>
+                  <ul class="menu__child-list">
+                    <li><a href="">Cửa Lò</a></li>
+                    <li><a href="">Sầm Sơn</a></li>
+                    <li><a href="">Nghệ An</a></li>
+                    <li><a href="">Thiên Cầm</a></li>
+                    <li><a href="">Quảng Bình</a></li>
+                    <li><a href="">Huế</a></li>
+                    <li><a href="">Đà Nẵng</a></li>
+                    <li><a href="">Hội An</a></li>
+                    <li><a href="">Nha Trang</a></li>
+                    <li><a href="">Phú Yên</a></li>
+                    <li><a href="">Quy Nhơn</a></li>
+                    <li><a href="">Đà Lạt</a></li>
+                    <li><a href="">Tây Nguyên</a></li>
+                    <li><a href="">Phan Thiết - Mũi Né</a></li>
+                  </ul>
+                </div>
+                <div class="menu__child-item">
+                  <h4><a href="">Miền Nam</a></h4>
+                  <ul class="menu__child-list">
+                    <li><a href="">Phú Quốc</a></li>
+                    <li><a href="">Côn Đảo</a></li>
+                    <li><a href="">Bến Tre</a></li>
+                    <li><a href="">Cần Thơ</a></li>
+                    <li><a href="">Cà Mau</a></li>
+                    <li><a href="">Hà Tiên</a></li>
+                    <li><a href="">Kiên Giang</a></li>
+                    <li><a href="">Nam Du</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="menu-item">
+              <a href="tour_khuyen_mai.html" class="menu-link">
+                TOUR KHUYẾN MÃI
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="tin_tuc.html" class="menu-link"
+                >TIN TỨC & KINH NGHIỆM DU LỊCH</a
+              >
+            </li>
+            <li class="menu-item">
+              <a href="FAQ.html" class="menu-link">FAQ</a>
+            </li>
+            <li class="menu-item">
+              <a href="contact.html" class="menu-link">LIÊN HỆ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="banners">
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <img
+            src="./images/yousef-espanioly-DA_tplYgTow-unsplash.jpg"
+            style="width: 100%"
+          />
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="./images/patrick-adcock-QG2ndAiyQ38-unsplash.jpg"
+            style="width: 100%"
+          />
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="./images/ashutosh-saraswat-CXyz3qljaH8-unsplash.jpg  "
+            style="width: 100%"
+          />
+        </div>
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <div class="container">
+        <div class="banner">
+          <h1 class="banner-heading">Đặt Tour du lịch!</h1>
+          <h3 class="banner-desc">
+            Hơn 300 tours du lịch ở Việt Nam và Quốc tế
+          </h3>
+          <form action="" class="banner-form" method="post">
+            <div class="banner-place">
+              <img src="./images/place-localizer.svg" alt="" />
+              <input type="text" placeholder="Bạn muốn đi đâu?" />
+            </div>
+            <div class="banner-bottom">
+              <div class="banner-date">
+                <img src="./images/date.svg" alt="" />
+                <div class="banner-date-content">
+                  <p>Ngày khởi hành</p>
+                  <input
+                    type="text"
+                    name=""
+                    id="banner-date"
+                    placeholder="Chọn Ngày khởi hành"
+                  />
+                </div>
+              </div>
+              <div class="banner-plane">
+                <img src="./images/paper-plane.svg" alt="" />
+                <div class="banner-plane-content">
+                  <p>Khởi hành từ</p>
+                  <select name="" id="" class="">
+                    <option value="">Tất cả</option>
+                    <option value="">TP.Hồ Chí Minh</option>
+                    <option value="">Hà Nội</option>
+                    <option value="">TP.Huế</option>
+                  </select>
+                </div>
+              </div>
+              <button type="submit" class="banner-btn">TÌM</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="policys">
+      <div class="container">
+        <div class="policy">
+          <div class="policy-item">
+            <a href="#">
+              <div class="policy-icon">
+                <img src="./images/feature_search_image_1.png" alt="" />
+              </div>
+              <div class="policy-content">
+                <h3 class="policy-caption">Đảm bảo giá tốt nhất</h3>
+                <p class="policy-desc">
+                  Chúng tôi đảm bảo khách hàng sẽ đặt được dịch vụ với giá tốt
+                  nhất, những chương trình khuyến mãi hấp dẫn nhất
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="policy-item">
+            <a href="#">
+              <div class="policy-icon">
+                <img src="./images/feature_search_image_2.png" alt="" />
+              </div>
+              <div class="policy-content">
+                <h3 class="policy-caption">
+                  Dịch vụ tin cậy - Giá trị đích thực
+                </h3>
+                <p class="policy-desc">
+                  Đặt lợi ích khách hàng lên trên hết, chúng tôi hỗ trợ khách
+                  hàng nhanh và chính xác nhất với dịch vụ tin cậy, giá trị đích
+                  thực.
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="policy-item">
+            <a href="#">
+              <div class="policy-icon">
+                <img src="./images/feature_search_image_3.png" alt="" />
+              </div>
+              <div class="policy-content">
+                <h3 class="policy-caption">Đảm bảo chất lượng</h3>
+                <p class="policy-desc">
+                  Chúng tôi liên kết chặt chẽ với các đối tác, khảo sát định kỳ
+                  để đảm bảo chất lượng tốt nhất của dịch vụ
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="tour-last-hour">
+      <div class="container">
+        <h2 class="tour-last-caption">
+          <a href="#"> <span>TOUR GIỜ CHÓT</span> GIÁ TỐT</a>
+        </h2>
+        <p class="tour-last-desc">
+          Cùng Evo Tour điểm qua một vài địa điểm du lịch trong nước thu hút du
+          khách nhất nhé!
+        </p>
+        <div class="tour-last">
+          <div class="tour-last-item">
+            <div class="tour-last-img">
+              <a href="tour_detail.html">
+                <img src="./images/vistas-canal-venecia.png" alt="" />
+              </a>
+            </div>
+            <div class="tour-last-info">
+              <h3 class="info-tour-title">
+                <a href="tour_detail.html"
+                  >Du lịch Ý [Rome - Pisa - Florence - Venica - Milan]</a
+                >
+              </h3>
+              <div class="vote-box">
+                <div class="meta-vote">
+                  <img src="./images/tag_icon_1.svg" alt="" />
+                  <img src="./images/tag_icon_3.svg" alt="" />
+                </div>
+                <div class="sale-off">75.000.000đ</div>
+              </div>
+              <div class="date-go">
+                <ul>
+                  <li>
+                    <img src="./images/tag_icon_4.svg" alt="" />
+                    <div>
+                      <span class="date">Lịch khởi hành:</span>
+                      <span class="date-go-color">Thứ 2 hàng tuần</span>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="./images/tag_icon_5.svg" alt="" />
+                    <div>
+                      <span class="date">Thời gian:</span>
+                      <span class="date-go-color">6 ngày 5 đêm</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="action-box">
+                <h2 class="price-box">46.900.000 đ</h2>
+                <a href="#" class="booking-box">ĐẶT TOUR</a>
+              </div>
+            </div>
+          </div>
+          <div class="tour-last-item">
+            <div class="tour-last-img">
+              <a href="#">
+                <img src="./images/vistas-canal-venecia.png" alt="" />
+              </a>
+            </div>
+            <div class="tour-last-info">
+              <h3 class="info-tour-title">
+                <a href="#"
+                  >Du lịch Ý [Rome - Pisa - Florence - Venica - Milan]</a
+                >
+              </h3>
+              <div class="vote-box">
+                <div class="meta-vote">
+                  <img src="./images/tag_icon_1.svg" alt="" />
+                  <img src="./images/tag_icon_3.svg" alt="" />
+                </div>
+                <div class="sale-off">75.000.000đ</div>
+              </div>
+              <div class="date-go">
+                <ul>
+                  <li>
+                    <img src="./images/tag_icon_4.svg" alt="" />
+                    <div>
+                      <span class="date">Lịch khởi hành:</span>
+                      <span class="date-go-color">Thứ 2 hàng tuần</span>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="./images/tag_icon_5.svg" alt="" />
+                    <div>
+                      <span class="date">Thời gian:</span>
+                      <span class="date-go-color">6 ngày 5 đêm</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="action-box">
+                <h2 class="price-box">46.900.000 đ</h2>
+                <a href="#" class="booking-box">ĐẶT TOUR</a>
+              </div>
+            </div>
+          </div>
+          <div class="tour-last-item">
+            <div class="tour-last-img">
+              <a href="#">
+                <img src="./images/vistas-canal-venecia.png" alt="" />
+              </a>
+            </div>
+            <div class="tour-last-info">
+              <h3 class="info-tour-title">
+                <a href="#"
+                  >Du lịch Ý [Rome - Pisa - Florence - Venica - Milan]</a
+                >
+              </h3>
+              <div class="vote-box">
+                <div class="meta-vote">
+                  <img src="./images/tag_icon_1.svg" alt="" />
+                  <img src="./images/tag_icon_3.svg" alt="" />
+                </div>
+                <div class="sale-off">75.000.000đ</div>
+              </div>
+              <div class="date-go">
+                <ul>
+                  <li>
+                    <img src="./images/tag_icon_4.svg" alt="" />
+                    <div>
+                      <span class="date">Lịch khởi hành:</span>
+                      <span class="date-go-color">Thứ 2 hàng tuần</span>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="./images/tag_icon_5.svg" alt="" />
+                    <div>
+                      <span class="date">Thời gian:</span>
+                      <span class="date-go-color">6 ngày 5 đêm</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="action-box">
+                <h2 class="price-box">46.900.000 đ</h2>
+                <a href="#" class="booking-box">ĐẶT TOUR</a>
+              </div>
+            </div>
+          </div>
+          <div class="tour-last-item">
+            <div class="tour-last-img">
+              <a href="#">
+                <img src="./images/vistas-canal-venecia.png" alt="" />
+              </a>
+            </div>
+            <div class="tour-last-info">
+              <h3 class="info-tour-title">
+                <a href="#"
+                  >Du lịch Ý [Rome - Pisa - Florence - Venica - Milan]</a
+                >
+              </h3>
+              <div class="vote-box">
+                <div class="meta-vote">
+                  <img src="./images/tag_icon_1.svg" alt="" />
+                  <img src="./images/tag_icon_3.svg" alt="" />
+                </div>
+                <div class="sale-off">75.000.000đ</div>
+              </div>
+              <div class="date-go">
+                <ul>
+                  <li>
+                    <img src="./images/tag_icon_4.svg" alt="" />
+                    <div>
+                      <span class="date">Lịch khởi hành:</span>
+                      <span class="date-go-color">Thứ 2 hàng tuần</span>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="./images/tag_icon_5.svg" alt="" />
+                    <div>
+                      <span class="date">Thời gian:</span>
+                      <span class="date-go-color">6 ngày 5 đêm</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="action-box">
+                <h2 class="price-box">46.900.000 đ</h2>
+                <a href="#" class="booking-box">ĐẶT TOUR</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="banners-2">
+      <div class="container">
+        <div class="banner-2">
+          <a href="#" class="banner-2-img">
+            <img src="./images/feature_menu_1.png" alt="" />
+          </a>
+          <a href="#" class="banner-2-img">
+            <img src="./images/feature_menu_2.png" alt="" />
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="tour-inbound">
+      <div class="container">
+        <h2 class="tour-last-caption">
+          <a href="#">TOUR MIỀN BẮC</a>
+        </h2>
+        <p class="tour-last-desc">
+          Tour du lịch Trong nước tại Evo Tour. Hành hương đầu xuân - Tận hưởng
+          bản sắc Việt.
+        </p>
+        <div class="tour-last">
+          <div class="tour-last-item">
+            <div class="tour-last-img">
+              <a href="#">
+                <img src="./images/vistas-canal-venecia.png" alt="" />
+              </a>
+            </div>
+            <div class="tour-last-info">
+              <h3 class="info-tour-title">
+                <a href="#"
+                  >Du lịch Ý [Rome - Pisa - Florence - Venica - Milan]</a
+                >
+              </h3>
+              <div class="vote-box">
+                <div class="meta-vote">
+                  <img src="./images/tag_icon_1.svg" alt="" />
+                  <img src="./images/tag_icon_3.svg" alt="" />
+                </div>
+                <div class="sale-off">75.000.000đ</div>
+              </div>
+              <div class="date-go">
+                <ul>
+                  <li>
+                    <img src="./images/tag_icon_4.svg" alt="" />
+                    <div>
+                      <span class="date">Lịch khởi hành:</span>
+                      <span class="date-go-color">Thứ 2 hàng tuần</span>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="./images/tag_icon_5.svg" alt="" />
+                    <div>
+                      <span class="date">Thời gian:</span>
+                      <span class="date-go-color">6 ngày 5 đêm</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="action-box">
+                <h2 class="price-box">46.900.000 đ</h2>
+                <a href="#" class="booking-box">ĐẶT TOUR</a>
+              </div>
+            </div>
+          </div>
+          <div class="tour-last-item">
+            <div class="tour-last-img">
+              <a href="#">
+                <img src="./images/vistas-canal-venecia.png" alt="" />
+              </a>
+            </div>
+            <div class="tour-last-info">
+              <h3 class="info-tour-title">
+                <a href="#"
+                  >Du lịch Ý [Rome - Pisa - Florence - Venica - Milan]</a
+                >
+              </h3>
+              <div class="vote-box">
+                <div class="meta-vote">
+                  <img src="./images/tag_icon_1.svg" alt="" />
+                  <img src="./images/tag_icon_3.svg" alt="" />
+                </div>
+                <div class="sale-off">75.000.000đ</div>
+              </div>
+              <div class="date-go">
+                <ul>
+                  <li>
+                    <img src="./images/tag_icon_4.svg" alt="" />
+                    <div>
+                      <span class="date">Lịch khởi hành:</span>
+                      <span class="date-go-color">Thứ 2 hàng tuần</span>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="./images/tag_icon_5.svg" alt="" />
+                    <div>
+                      <span class="date">Thời gian:</span>
+                      <span class="date-go-color">6 ngày 5 đêm</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="action-box">
+                <h2 class="price-box">46.900.000 đ</h2>
+                <a href="#" class="booking-box">ĐẶT TOUR</a>
+              </div>
+            </div>
+          </div>
+          <div class="tour-last-item">
+            <div class="tour-last-img">
+              <a href="#">
+                <img src="./images/vistas-canal-venecia.png" alt="" />
+              </a>
+            </div>
+            <div class="tour-last-info">
+              <h3 class="info-tour-title">
+                <a href="#"
+                  >Du lịch Ý [Rome - Pisa - Florence - Venica - Milan]</a
+                >
+              </h3>
+              <div class="vote-box">
+                <div class="meta-vote">
+                  <img src="./images/tag_icon_1.svg" alt="" />
+                  <img src="./images/tag_icon_3.svg" alt="" />
+                </div>
+                <div class="sale-off">75.000.000đ</div>
+              </div>
+              <div class="date-go">
+                <ul>
+                  <li>
+                    <img src="./images/tag_icon_4.svg" alt="" />
+                    <div>
+                      <span class="date">Lịch khởi hành:</span>
+                      <span class="date-go-color">Thứ 2 hàng tuần</span>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="./images/tag_icon_5.svg" alt="" />
+                    <div>
+                      <span class="date">Thời gian:</span>
+                      <span class="date-go-color">6 ngày 5 đêm</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="action-box">
+                <h2 class="price-box">46.900.000 đ</h2>
+                <a href="#" class="booking-box">ĐẶT TOUR</a>
+              </div>
+            </div>
+          </div>
+          <div class="tour-last-item">
+            <div class="tour-last-img">
+              <a href="#">
+                <img src="./images/vistas-canal-venecia.png" alt="" />
+              </a>
+            </div>
+            <div class="tour-last-info">
+              <h3 class="info-tour-title">
+                <a href="#"
+                  >Du lịch Ý [Rome - Pisa - Florence - Venica - Milan]</a
+                >
+              </h3>
+              <div class="vote-box">
+                <div class="meta-vote">
+                  <img src="./images/tag_icon_1.svg" alt="" />
+                  <img src="./images/tag_icon_3.svg" alt="" />
+                </div>
+                <div class="sale-off">75.000.000đ</div>
+              </div>
+              <div class="date-go">
+                <ul>
+                  <li>
+                    <img src="./images/tag_icon_4.svg" alt="" />
+                    <div>
+                      <span class="date">Lịch khởi hành:</span>
+                      <span class="date-go-color">Thứ 2 hàng tuần</span>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="./images/tag_icon_5.svg" alt="" />
+                    <div>
+                      <span class="date">Thời gian:</span>
+                      <span class="date-go-color">6 ngày 5 đêm</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="action-box">
+                <h2 class="price-box">46.900.000 đ</h2>
+                <a href="#" class="booking-box">ĐẶT TOUR</a>
+              </div>
+            </div>
+          </div>
+          <div class="tour-last-item">
+            <div class="tour-last-img">
+              <a href="#">
+                <img src="./images/vistas-canal-venecia.png" alt="" />
+              </a>
+            </div>
+            <div class="tour-last-info">
+              <h3 class="info-tour-title">
+                <a href="#"
+                  >Du lịch Ý [Rome - Pisa - Florence - Venica - Milan]</a
+                >
+              </h3>
+              <div class="vote-box">
+                <div class="meta-vote">
+                  <img src="./images/tag_icon_1.svg" alt="" />
+                  <img src="./images/tag_icon_3.svg" alt="" />
+                </div>
+                <div class="sale-off">75.000.000đ</div>
+              </div>
+              <div class="date-go">
+                <ul>
+                  <li>
+                    <img src="./images/tag_icon_4.svg" alt="" />
+                    <div>
+                      <span class="date">Lịch khởi hành:</span>
+                      <span class="date-go-color">Thứ 2 hàng tuần</span>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="./images/tag_icon_5.svg" alt="" />
+                    <div>
+                      <span class="date">Thời gian:</span>
+                      <span class="date-go-color">6 ngày 5 đêm</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="action-box">
+                <h2 class="price-box">46.900.000 đ</h2>
+                <a href="#" class="booking-box">ĐẶT TOUR</a>
+              </div>
+            </div>
+          </div>
+          <div class="tour-last-item">
+            <div class="tour-last-img">
+              <a href="#">
+                <img src="./images/vistas-canal-venecia.png" alt="" />
+              </a>
+            </div>
+            <div class="tour-last-info">
+              <h3 class="info-tour-title">
+                <a href="#"
+                  >Du lịch Ý [Rome - Pisa - Florence - Venica - Milan]</a
+                >
+              </h3>
+              <div class="vote-box">
+                <div class="meta-vote">
+                  <img src="./images/tag_icon_1.svg" alt="" />
+                  <img src="./images/tag_icon_3.svg" alt="" />
+                </div>
+                <div class="sale-off">75.000.000đ</div>
+              </div>
+              <div class="date-go">
+                <ul>
+                  <li>
+                    <img src="./images/tag_icon_4.svg" alt="" />
+                    <div>
+                      <span class="date">Lịch khởi hành:</span>
+                      <span class="date-go-color">Thứ 2 hàng tuần</span>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="./images/tag_icon_5.svg" alt="" />
+                    <div>
+                      <span class="date">Thời gian:</span>
+                      <span class="date-go-color">6 ngày 5 đêm</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="action-box">
+                <h2 class="price-box">46.900.000 đ</h2>
+                <a href="#" class="booking-box">ĐẶT TOUR</a>
+              </div>
+            </div>
+          </div>
+          <div class="tour-last-item">
+            <div class="tour-last-img">
+              <a href="#">
+                <img src="./images/vistas-canal-venecia.png" alt="" />
+              </a>
+            </div>
+            <div class="tour-last-info">
+              <h3 class="info-tour-title">
+                <a href="#"
+                  >Du lịch Ý [Rome - Pisa - Florence - Venica - Milan]</a
+                >
+              </h3>
+              <div class="vote-box">
+                <div class="meta-vote">
+                  <img src="./images/tag_icon_1.svg" alt="" />
+                  <img src="./images/tag_icon_3.svg" alt="" />
+                </div>
+                <div class="sale-off">75.000.000đ</div>
+              </div>
+              <div class="date-go">
+                <ul>
+                  <li>
+                    <img src="./images/tag_icon_4.svg" alt="" />
+                    <div>
+                      <span class="date">Lịch khởi hành:</span>
+                      <span class="date-go-color">Thứ 2 hàng tuần</span>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="./images/tag_icon_5.svg" alt="" />
+                    <div>
+                      <span class="date">Thời gian:</span>
+                      <span class="date-go-color">6 ngày 5 đêm</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="action-box">
+                <h2 class="price-box">46.900.000 đ</h2>
+                <a href="#" class="booking-box">ĐẶT TOUR</a>
+              </div>
+            </div>
+          </div>
+          <div class="tour-last-item">
+            <div class="tour-last-img">
+              <a href="#">
+                <img src="./images/vistas-canal-venecia.png" alt="" />
+              </a>
+            </div>
+            <div class="tour-last-info">
+              <h3 class="info-tour-title">
+                <a href="#"
+                  >Du lịch Ý [Rome - Pisa - Florence - Venica - Milan]</a
+                >
+              </h3>
+              <div class="vote-box">
+                <div class="meta-vote">
+                  <img src="./images/tag_icon_1.svg" alt="" />
+                  <img src="./images/tag_icon_3.svg" alt="" />
+                </div>
+                <div class="sale-off">75.000.000đ</div>
+              </div>
+              <div class="date-go">
+                <ul>
+                  <li>
+                    <img src="./images/tag_icon_4.svg" alt="" />
+                    <div>
+                      <span class="date">Lịch khởi hành:</span>
+                      <span class="date-go-color">Thứ 2 hàng tuần</span>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="./images/tag_icon_5.svg" alt="" />
+                    <div>
+                      <span class="date">Thời gian:</span>
+                      <span class="date-go-color">6 ngày 5 đêm</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="action-box">
+                <h2 class="price-box">46.900.000 đ</h2>
+                <a href="#" class="booking-box">ĐẶT TOUR</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tour-more">
+          <a href="#">Xem tất cả tour</a>
+        </div>
+      </div>
+    </section>
+    <section class="tour-inbound">
+      <div class="container">
+        <h2 class="tour-last-caption">
+          <a href="#">TOUR MIỀN TRUNG</a>
+        </h2>
+        <p class="tour-last-desc">
+          Tour du lịch Trong nước tại Evo Tour. Hành hương đầu xuân - Tận hưởng
+          bản sắc Việt.
+        </p>
+        <div class="tour-last">
+          <div class="tour-last-item">
+            <div class="tour-last-img">
+              <a href="#">
+                <img src="./images/vistas-canal-venecia.png" alt="" />
+              </a>
+            </div>
+            <div class="tour-last-info">
+              <h3 class="info-tour-title">
+                <a href="#"
+                  >Du lịch Ý [Rome - Pisa - Florence - Venica - Milan]</a
+                >
+              </h3>
+              <div class="vote-box">
+                <div class="meta-vote">
+                  <img src="./images/tag_icon_1.svg" alt="" />
+                  <img src="./images/tag_icon_3.svg" alt="" />
+                </div>
+                <div class="sale-off">75.000.000đ</div>
+              </div>
+              <div class="date-go">
+                <ul>
+                  <li>
+                    <img src="./images/tag_icon_4.svg" alt="" />
+                    <div>
+                      <span class="date">Lịch khởi hành:</span>
+                      <span class="date-go-color">Thứ 2 hàng tuần</span>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="./images/tag_icon_5.svg" alt="" />
+                    <div>
+                      <span class="date">Thời gian:</span>
+                      <span class="date-go-color">6 ngày 5 đêm</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="action-box">
+                <h2 class="price-box">46.900.000 đ</h2>
+                <a href="#" class="booking-box">ĐẶT TOUR</a>
+              </div>
+            </div>
+          </div>
+          <div class="tour-last-item">
+            <div class="tour-last-img">
+              <a href="#">
+                <img src="./images/vistas-canal-venecia.png" alt="" />
+              </a>
+            </div>
+            <div class="tour-last-info">
+              <h3 class="info-tour-title">
+                <a href="#"
+                  >Du lịch Ý [Rome - Pisa - Florence - Venica - Milan]</a
+                >
+              </h3>
+              <div class="vote-box">
+                <div class="meta-vote">
+                  <img src="./images/tag_icon_1.svg" alt="" />
+                  <img src="./images/tag_icon_3.svg" alt="" />
+                </div>
+                <div class="sale-off">75.000.000đ</div>
+              </div>
+              <div class="date-go">
+                <ul>
+                  <li>
+                    <img src="./images/tag_icon_4.svg" alt="" />
+                    <div>
+                      <span class="date">Lịch khởi hành:</span>
+                      <span class="date-go-color">Thứ 2 hàng tuần</span>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="./images/tag_icon_5.svg" alt="" />
+                    <div>
+                      <span class="date">Thời gian:</span>
+                      <span class="date-go-color">6 ngày 5 đêm</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="action-box">
+                <h2 class="price-box">46.900.000 đ</h2>
+                <a href="#" class="booking-box">ĐẶT TOUR</a>
+              </div>
+            </div>
+          </div>
+          <div class="tour-last-item">
+            <div class="tour-last-img">
+              <a href="#">
+                <img src="./images/vistas-canal-venecia.png" alt="" />
+              </a>
+            </div>
+            <div class="tour-last-info">
+              <h3 class="info-tour-title">
+                <a href="#"
+                  >Du lịch Ý [Rome - Pisa - Florence - Venica - Milan]</a
+                >
+              </h3>
+              <div class="vote-box">
+                <div class="meta-vote">
+                  <img src="./images/tag_icon_1.svg" alt="" />
+                  <img src="./images/tag_icon_3.svg" alt="" />
+                </div>
+                <div class="sale-off">75.000.000đ</div>
+              </div>
+              <div class="date-go">
+                <ul>
+                  <li>
+                    <img src="./images/tag_icon_4.svg" alt="" />
+                    <div>
+                      <span class="date">Lịch khởi hành:</span>
+                      <span class="date-go-color">Thứ 2 hàng tuần</span>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="./images/tag_icon_5.svg" alt="" />
+                    <div>
+                      <span class="date">Thời gian:</span>
+                      <span class="date-go-color">6 ngày 5 đêm</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="action-box">
+                <h2 class="price-box">46.900.000 đ</h2>
+                <a href="#" class="booking-box">ĐẶT TOUR</a>
+              </div>
+            </div>
+          </div>
+          <div class="tour-last-item">
+            <div class="tour-last-img">
+              <a href="#">
+                <img src="./images/vistas-canal-venecia.png" alt="" />
+              </a>
+            </div>
+            <div class="tour-last-info">
+              <h3 class="info-tour-title">
+                <a href="#"
+                  >Du lịch Ý [Rome - Pisa - Florence - Venica - Milan]</a
+                >
+              </h3>
+              <div class="vote-box">
+                <div class="meta-vote">
+                  <img src="./images/tag_icon_1.svg" alt="" />
+                  <img src="./images/tag_icon_3.svg" alt="" />
+                </div>
+                <div class="sale-off">75.000.000đ</div>
+              </div>
+              <div class="date-go">
+                <ul>
+                  <li>
+                    <img src="./images/tag_icon_4.svg" alt="" />
+                    <div>
+                      <span class="date">Lịch khởi hành:</span>
+                      <span class="date-go-color">Thứ 2 hàng tuần</span>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="./images/tag_icon_5.svg" alt="" />
+                    <div>
+                      <span class="date">Thời gian:</span>
+                      <span class="date-go-color">6 ngày 5 đêm</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="action-box">
+                <h2 class="price-box">46.900.000 đ</h2>
+                <a href="#" class="booking-box">ĐẶT TOUR</a>
+              </div>
+            </div>
+          </div>
+          <div class="tour-last-item">
+            <div class="tour-last-img">
+              <a href="#">
+                <img src="./images/vistas-canal-venecia.png" alt="" />
+              </a>
+            </div>
+            <div class="tour-last-info">
+              <h3 class="info-tour-title">
+                <a href="#"
+                  >Du lịch Ý [Rome - Pisa - Florence - Venica - Milan]</a
+                >
+              </h3>
+              <div class="vote-box">
+                <div class="meta-vote">
+                  <img src="./images/tag_icon_1.svg" alt="" />
+                  <img src="./images/tag_icon_3.svg" alt="" />
+                </div>
+                <div class="sale-off">75.000.000đ</div>
+              </div>
+              <div class="date-go">
+                <ul>
+                  <li>
+                    <img src="./images/tag_icon_4.svg" alt="" />
+                    <div>
+                      <span class="date">Lịch khởi hành:</span>
+                      <span class="date-go-color">Thứ 2 hàng tuần</span>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="./images/tag_icon_5.svg" alt="" />
+                    <div>
+                      <span class="date">Thời gian:</span>
+                      <span class="date-go-color">6 ngày 5 đêm</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="action-box">
+                <h2 class="price-box">46.900.000 đ</h2>
+                <a href="#" class="booking-box">ĐẶT TOUR</a>
+              </div>
+            </div>
+          </div>
+          <div class="tour-last-item">
+            <div class="tour-last-img">
+              <a href="#">
+                <img src="./images/vistas-canal-venecia.png" alt="" />
+              </a>
+            </div>
+            <div class="tour-last-info">
+              <h3 class="info-tour-title">
+                <a href="#"
+                  >Du lịch Ý [Rome - Pisa - Florence - Venica - Milan]</a
+                >
+              </h3>
+              <div class="vote-box">
+                <div class="meta-vote">
+                  <img src="./images/tag_icon_1.svg" alt="" />
+                  <img src="./images/tag_icon_3.svg" alt="" />
+                </div>
+                <div class="sale-off">75.000.000đ</div>
+              </div>
+              <div class="date-go">
+                <ul>
+                  <li>
+                    <img src="./images/tag_icon_4.svg" alt="" />
+                    <div>
+                      <span class="date">Lịch khởi hành:</span>
+                      <span class="date-go-color">Thứ 2 hàng tuần</span>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="./images/tag_icon_5.svg" alt="" />
+                    <div>
+                      <span class="date">Thời gian:</span>
+                      <span class="date-go-color">6 ngày 5 đêm</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="action-box">
+                <h2 class="price-box">46.900.000 đ</h2>
+                <a href="#" class="booking-box">ĐẶT TOUR</a>
+              </div>
+            </div>
+          </div>
+          <div class="tour-last-item">
+            <div class="tour-last-img">
+              <a href="#">
+                <img src="./images/vistas-canal-venecia.png" alt="" />
+              </a>
+            </div>
+            <div class="tour-last-info">
+              <h3 class="info-tour-title">
+                <a href="#"
+                  >Du lịch Ý [Rome - Pisa - Florence - Venica - Milan]</a
+                >
+              </h3>
+              <div class="vote-box">
+                <div class="meta-vote">
+                  <img src="./images/tag_icon_1.svg" alt="" />
+                  <img src="./images/tag_icon_3.svg" alt="" />
+                </div>
+                <div class="sale-off">75.000.000đ</div>
+              </div>
+              <div class="date-go">
+                <ul>
+                  <li>
+                    <img src="./images/tag_icon_4.svg" alt="" />
+                    <div>
+                      <span class="date">Lịch khởi hành:</span>
+                      <span class="date-go-color">Thứ 2 hàng tuần</span>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="./images/tag_icon_5.svg" alt="" />
+                    <div>
+                      <span class="date">Thời gian:</span>
+                      <span class="date-go-color">6 ngày 5 đêm</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="action-box">
+                <h2 class="price-box">46.900.000 đ</h2>
+                <a href="#" class="booking-box">ĐẶT TOUR</a>
+              </div>
+            </div>
+          </div>
+          <div class="tour-last-item">
+            <div class="tour-last-img">
+              <a href="#">
+                <img src="./images/vistas-canal-venecia.png" alt="" />
+              </a>
+            </div>
+            <div class="tour-last-info">
+              <h3 class="info-tour-title">
+                <a href="#"
+                  >Du lịch Ý [Rome - Pisa - Florence - Venica - Milan]</a
+                >
+              </h3>
+              <div class="vote-box">
+                <div class="meta-vote">
+                  <img src="./images/tag_icon_1.svg" alt="" />
+                  <img src="./images/tag_icon_3.svg" alt="" />
+                </div>
+                <div class="sale-off">75.000.000đ</div>
+              </div>
+              <div class="date-go">
+                <ul>
+                  <li>
+                    <img src="./images/tag_icon_4.svg" alt="" />
+                    <div>
+                      <span class="date">Lịch khởi hành:</span>
+                      <span class="date-go-color">Thứ 2 hàng tuần</span>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="./images/tag_icon_5.svg" alt="" />
+                    <div>
+                      <span class="date">Thời gian:</span>
+                      <span class="date-go-color">6 ngày 5 đêm</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="action-box">
+                <h2 class="price-box">46.900.000 đ</h2>
+                <a href="#" class="booking-box">ĐẶT TOUR</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tour-more">
+          <a href="#">Xem tất cả tour</a>
+        </div>
+      </div>
+    </section>
+    <section class="tour-inbound">
+      <div class="container">
+        <h2 class="tour-last-caption">
+          <a href="#">TOUR MIỀN NAM</a>
+        </h2>
+        <p class="tour-last-desc">
+          Tour du lịch Trong nước tại Evo Tour. Hành hương đầu xuân - Tận hưởng
+          bản sắc Việt.
+        </p>
+        <div class="tour-last">
+          <div class="tour-last-item">
+            <div class="tour-last-img">
+              <a href="#">
+                <img src="./images/vistas-canal-venecia.png" alt="" />
+              </a>
+            </div>
+            <div class="tour-last-info">
+              <h3 class="info-tour-title">
+                <a href="#"
+                  >Du lịch Ý [Rome - Pisa - Florence - Venica - Milan]</a
+                >
+              </h3>
+              <div class="vote-box">
+                <div class="meta-vote">
+                  <img src="./images/tag_icon_1.svg" alt="" />
+                  <img src="./images/tag_icon_3.svg" alt="" />
+                </div>
+                <div class="sale-off">75.000.000đ</div>
+              </div>
+              <div class="date-go">
+                <ul>
+                  <li>
+                    <img src="./images/tag_icon_4.svg" alt="" />
+                    <div>
+                      <span class="date">Lịch khởi hành:</span>
+                      <span class="date-go-color">Thứ 2 hàng tuần</span>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="./images/tag_icon_5.svg" alt="" />
+                    <div>
+                      <span class="date">Thời gian:</span>
+                      <span class="date-go-color">6 ngày 5 đêm</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="action-box">
+                <h2 class="price-box">46.900.000 đ</h2>
+                <a href="#" class="booking-box">ĐẶT TOUR</a>
+              </div>
+            </div>
+          </div>
+          <div class="tour-last-item">
+            <div class="tour-last-img">
+              <a href="#">
+                <img src="./images/vistas-canal-venecia.png" alt="" />
+              </a>
+            </div>
+            <div class="tour-last-info">
+              <h3 class="info-tour-title">
+                <a href="#"
+                  >Du lịch Ý [Rome - Pisa - Florence - Venica - Milan]</a
+                >
+              </h3>
+              <div class="vote-box">
+                <div class="meta-vote">
+                  <img src="./images/tag_icon_1.svg" alt="" />
+                  <img src="./images/tag_icon_3.svg" alt="" />
+                </div>
+                <div class="sale-off">75.000.000đ</div>
+              </div>
+              <div class="date-go">
+                <ul>
+                  <li>
+                    <img src="./images/tag_icon_4.svg" alt="" />
+                    <div>
+                      <span class="date">Lịch khởi hành:</span>
+                      <span class="date-go-color">Thứ 2 hàng tuần</span>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="./images/tag_icon_5.svg" alt="" />
+                    <div>
+                      <span class="date">Thời gian:</span>
+                      <span class="date-go-color">6 ngày 5 đêm</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="action-box">
+                <h2 class="price-box">46.900.000 đ</h2>
+                <a href="#" class="booking-box">ĐẶT TOUR</a>
+              </div>
+            </div>
+          </div>
+          <div class="tour-last-item">
+            <div class="tour-last-img">
+              <a href="#">
+                <img src="./images/vistas-canal-venecia.png" alt="" />
+              </a>
+            </div>
+            <div class="tour-last-info">
+              <h3 class="info-tour-title">
+                <a href="#"
+                  >Du lịch Ý [Rome - Pisa - Florence - Venica - Milan]</a
+                >
+              </h3>
+              <div class="vote-box">
+                <div class="meta-vote">
+                  <img src="./images/tag_icon_1.svg" alt="" />
+                  <img src="./images/tag_icon_3.svg" alt="" />
+                </div>
+                <div class="sale-off">75.000.000đ</div>
+              </div>
+              <div class="date-go">
+                <ul>
+                  <li>
+                    <img src="./images/tag_icon_4.svg" alt="" />
+                    <div>
+                      <span class="date">Lịch khởi hành:</span>
+                      <span class="date-go-color">Thứ 2 hàng tuần</span>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="./images/tag_icon_5.svg" alt="" />
+                    <div>
+                      <span class="date">Thời gian:</span>
+                      <span class="date-go-color">6 ngày 5 đêm</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="action-box">
+                <h2 class="price-box">46.900.000 đ</h2>
+                <a href="#" class="booking-box">ĐẶT TOUR</a>
+              </div>
+            </div>
+          </div>
+          <div class="tour-last-item">
+            <div class="tour-last-img">
+              <a href="#">
+                <img src="./images/vistas-canal-venecia.png" alt="" />
+              </a>
+            </div>
+            <div class="tour-last-info">
+              <h3 class="info-tour-title">
+                <a href="#"
+                  >Du lịch Ý [Rome - Pisa - Florence - Venica - Milan]</a
+                >
+              </h3>
+              <div class="vote-box">
+                <div class="meta-vote">
+                  <img src="./images/tag_icon_1.svg" alt="" />
+                  <img src="./images/tag_icon_3.svg" alt="" />
+                </div>
+                <div class="sale-off">75.000.000đ</div>
+              </div>
+              <div class="date-go">
+                <ul>
+                  <li>
+                    <img src="./images/tag_icon_4.svg" alt="" />
+                    <div>
+                      <span class="date">Lịch khởi hành:</span>
+                      <span class="date-go-color">Thứ 2 hàng tuần</span>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="./images/tag_icon_5.svg" alt="" />
+                    <div>
+                      <span class="date">Thời gian:</span>
+                      <span class="date-go-color">6 ngày 5 đêm</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="action-box">
+                <h2 class="price-box">46.900.000 đ</h2>
+                <a href="#" class="booking-box">ĐẶT TOUR</a>
+              </div>
+            </div>
+          </div>
+          <div class="tour-last-item">
+            <div class="tour-last-img">
+              <a href="#">
+                <img src="./images/vistas-canal-venecia.png" alt="" />
+              </a>
+            </div>
+            <div class="tour-last-info">
+              <h3 class="info-tour-title">
+                <a href="#"
+                  >Du lịch Ý [Rome - Pisa - Florence - Venica - Milan]</a
+                >
+              </h3>
+              <div class="vote-box">
+                <div class="meta-vote">
+                  <img src="./images/tag_icon_1.svg" alt="" />
+                  <img src="./images/tag_icon_3.svg" alt="" />
+                </div>
+                <div class="sale-off">75.000.000đ</div>
+              </div>
+              <div class="date-go">
+                <ul>
+                  <li>
+                    <img src="./images/tag_icon_4.svg" alt="" />
+                    <div>
+                      <span class="date">Lịch khởi hành:</span>
+                      <span class="date-go-color">Thứ 2 hàng tuần</span>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="./images/tag_icon_5.svg" alt="" />
+                    <div>
+                      <span class="date">Thời gian:</span>
+                      <span class="date-go-color">6 ngày 5 đêm</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="action-box">
+                <h2 class="price-box">46.900.000 đ</h2>
+                <a href="#" class="booking-box">ĐẶT TOUR</a>
+              </div>
+            </div>
+          </div>
+          <div class="tour-last-item">
+            <div class="tour-last-img">
+              <a href="#">
+                <img src="./images/vistas-canal-venecia.png" alt="" />
+              </a>
+            </div>
+            <div class="tour-last-info">
+              <h3 class="info-tour-title">
+                <a href="#"
+                  >Du lịch Ý [Rome - Pisa - Florence - Venica - Milan]</a
+                >
+              </h3>
+              <div class="vote-box">
+                <div class="meta-vote">
+                  <img src="./images/tag_icon_1.svg" alt="" />
+                  <img src="./images/tag_icon_3.svg" alt="" />
+                </div>
+                <div class="sale-off">75.000.000đ</div>
+              </div>
+              <div class="date-go">
+                <ul>
+                  <li>
+                    <img src="./images/tag_icon_4.svg" alt="" />
+                    <div>
+                      <span class="date">Lịch khởi hành:</span>
+                      <span class="date-go-color">Thứ 2 hàng tuần</span>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="./images/tag_icon_5.svg" alt="" />
+                    <div>
+                      <span class="date">Thời gian:</span>
+                      <span class="date-go-color">6 ngày 5 đêm</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="action-box">
+                <h2 class="price-box">46.900.000 đ</h2>
+                <a href="#" class="booking-box">ĐẶT TOUR</a>
+              </div>
+            </div>
+          </div>
+          <div class="tour-last-item">
+            <div class="tour-last-img">
+              <a href="#">
+                <img src="./images/vistas-canal-venecia.png" alt="" />
+              </a>
+            </div>
+            <div class="tour-last-info">
+              <h3 class="info-tour-title">
+                <a href="#"
+                  >Du lịch Ý [Rome - Pisa - Florence - Venica - Milan]</a
+                >
+              </h3>
+              <div class="vote-box">
+                <div class="meta-vote">
+                  <img src="./images/tag_icon_1.svg" alt="" />
+                  <img src="./images/tag_icon_3.svg" alt="" />
+                </div>
+                <div class="sale-off">75.000.000đ</div>
+              </div>
+              <div class="date-go">
+                <ul>
+                  <li>
+                    <img src="./images/tag_icon_4.svg" alt="" />
+                    <div>
+                      <span class="date">Lịch khởi hành:</span>
+                      <span class="date-go-color">Thứ 2 hàng tuần</span>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="./images/tag_icon_5.svg" alt="" />
+                    <div>
+                      <span class="date">Thời gian:</span>
+                      <span class="date-go-color">6 ngày 5 đêm</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="action-box">
+                <h2 class="price-box">46.900.000 đ</h2>
+                <a href="#" class="booking-box">ĐẶT TOUR</a>
+              </div>
+            </div>
+          </div>
+          <div class="tour-last-item">
+            <div class="tour-last-img">
+              <a href="#">
+                <img src="./images/vistas-canal-venecia.png" alt="" />
+              </a>
+            </div>
+            <div class="tour-last-info">
+              <h3 class="info-tour-title">
+                <a href="#"
+                  >Du lịch Ý [Rome - Pisa - Florence - Venica - Milan]</a
+                >
+              </h3>
+              <div class="vote-box">
+                <div class="meta-vote">
+                  <img src="./images/tag_icon_1.svg" alt="" />
+                  <img src="./images/tag_icon_3.svg" alt="" />
+                </div>
+                <div class="sale-off">75.000.000đ</div>
+              </div>
+              <div class="date-go">
+                <ul>
+                  <li>
+                    <img src="./images/tag_icon_4.svg" alt="" />
+                    <div>
+                      <span class="date">Lịch khởi hành:</span>
+                      <span class="date-go-color">Thứ 2 hàng tuần</span>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="./images/tag_icon_5.svg" alt="" />
+                    <div>
+                      <span class="date">Thời gian:</span>
+                      <span class="date-go-color">6 ngày 5 đêm</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="action-box">
+                <h2 class="price-box">46.900.000 đ</h2>
+                <a href="#" class="booking-box">ĐẶT TOUR</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tour-more">
+          <a href="#">Xem tất cả tour</a>
+        </div>
+      </div>
+    </section>
+    <section class="tour-heart">
+      <div class="container">
+        <h2 class="tour-last-caption">
+          <a href="#">ĐIỂM ĐẾN YÊU THÍCH</a>
+        </h2>
+        <p class="tour-last-desc">
+          Các điểm đến du lịch trong nước và nước ngoài
+        </p>
+        <div class="tour-destination">
+          <div class="tour-destination-top">
+            <div class="tour-destination-top-item">
+              <a href="#">
+                <div class="destination-image">
+                  <img src="./images/halonggetty.jpg" alt="" />
+                </div>
+                <div class="destination-content">
+                  <h2 class="destination-name">VỊNH HẠ LONG</h2>
+                  <p class="destination-like">
+                    Đã có <span>1,600 +</span> lượt khách
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="tour-destination-top-item">
+              <a href="#">
+                <div class="destination-image">
+                  <img src="./images/halonggetty.jpg" alt="" />
+                </div>
+                <div class="destination-content">
+                  <h2 class="destination-name">VỊNH HẠ LONG</h2>
+                  <p class="destination-like">
+                    Đã có <span>1,600 +</span> lượt khách
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="tour-destination-top-item">
+              <a href="#">
+                <div class="destination-image">
+                  <img src="./images/halonggetty.jpg" alt="" />
+                </div>
+                <div class="destination-content">
+                  <h2 class="destination-name">VỊNH HẠ LONG</h2>
+                  <p class="destination-like">
+                    Đã có <span>1,600 +</span> lượt khách
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="tour-destination-top-item">
+              <a href="#">
+                <div class="destination-image">
+                  <img src="./images/halonggetty.jpg" alt="" />
+                </div>
+                <div class="destination-content">
+                  <h2 class="destination-name">VỊNH HẠ LONG</h2>
+                  <p class="destination-like">
+                    Đã có <span>1,600 +</span> lượt khách
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="tour-destination-bottom">
+            <div class="tour-destination-bottom-item">
+              <a href="#">
+                <div class="destination-image2">
+                  <img src="./images/halonggetty.jpg" alt="" />
+                </div>
+                <div class="destination-content2">
+                  <h2 class="destination-name2">CHÂU ÂU</h2>
+                  <p class="destination-like2">
+                    Khám phá ngay
+                    <ion-icon name="chevron-forward-circle"></ion-icon>
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="tour-destination-bottom-item">
+              <a href="#">
+                <div class="destination-image2">
+                  <img src="./images/halonggetty.jpg" alt="" />
+                </div>
+                <div class="destination-content2">
+                  <h2 class="destination-name2">CHÂU ÂU</h2>
+                  <p class="destination-like2">
+                    Khám phá ngay
+                    <ion-icon name="chevron-forward-circle"></ion-icon>
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="tour-destination-bottom-item">
+              <a href="#">
+                <div class="destination-image2">
+                  <img src="./images/halonggetty.jpg" alt="" />
+                </div>
+                <div class="destination-content2">
+                  <h2 class="destination-name2">CHÂU ÂU</h2>
+                  <p class="destination-like2">
+                    Khám phá ngay
+                    <ion-icon name="chevron-forward-circle"></ion-icon>
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="tour-destination-bottom-item">
+              <a href="#">
+                <div class="destination-image2">
+                  <img src="./images/halonggetty.jpg" alt="" />
+                </div>
+                <div class="destination-content2">
+                  <h2 class="destination-name2">CHÂU ÂU</h2>
+                  <p class="destination-like2">
+                    Khám phá ngay
+                    <ion-icon name="chevron-forward-circle"></ion-icon>
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="tour-destination-bottom-item">
+              <a href="#">
+                <div class="destination-image2">
+                  <img src="./images/halonggetty.jpg" alt="" />
+                </div>
+                <div class="destination-content2">
+                  <h2 class="destination-name2">CHÂU ÂU</h2>
+                  <p class="destination-like2">
+                    Khám phá ngay
+                    <ion-icon name="chevron-forward-circle"></ion-icon>
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="tour-blogs">
+      <div class="container">
+        <h2 class="tour-last-caption">
+          <a href="#">CẢM HỨNG DU LỊCH</a>
+        </h2>
+        <p class="tour-last-desc">
+          Thông tin về du lịch, văn hóa, ẩm thực, các sự kiện và lễ hội tại các
+          điểm đến Việt nam, Đông Nam Á và Thế Giới
+        </p>
+        <div class="tour-blog">
+          <div class="tour-blog-item">
+            <a href="#">
+              <div class="blog-image">
+                <img
+                  src="./images/patrick-adcock-QG2ndAiyQ38-unsplash.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="blog-content">
+                <h2 class="blog-title">
+                  Cẩm nang du lịch Đà Nẵng một ngày cho hội bạn vui chơi "sập"
+                  Đà thành
+                </h2>
+                <p class="blog-desc">
+                  Đà Nẵng có cả núi, đồng bằng và biển, chỉ nằm cách Hội An 30
+                  km. Bao quanh bởi hàng loạt điểm tham quan du lịch cũng như
+                  danh lam thắng cảnh nổi tiếng nên không khó hiểu vì sao nơi
+                  đây lại thu hút khách du lịch đến vậy. Dưới đây, Traveloka sẽ
+                  mang đến cho các bạn một “cuốn” cẩm nang du lịch Đà Nẵng một
+                  ngày đầy ắp những gợi ý cho chuyến đi hoàn hảo, cùng nhóm bạn
+                  “tái tạo” lại năng lượng để quay về học tập – làm việc nhé!
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="tour-blog-item">
+            <a href="#">
+              <div class="blog-image">
+                <img
+                  src="./images/patrick-adcock-QG2ndAiyQ38-unsplash.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="blog-content">
+                <h2 class="blog-title">
+                  Cẩm nang du lịch Đà Nẵng một ngày cho hội bạn vui chơi "sập"
+                  Đà thành
+                </h2>
+                <p class="blog-desc">
+                  Đà Nẵng có cả núi, đồng bằng và biển, chỉ nằm cách Hội An 30
+                  km. Bao quanh bởi hàng loạt điểm tham quan du lịch cũng như
+                  danh lam thắng cảnh nổi tiếng nên không khó hiểu vì sao nơi
+                  đây lại thu hút khách du lịch đến vậy. Dưới đây, Traveloka sẽ
+                  mang đến cho các bạn một “cuốn” cẩm nang du lịch Đà Nẵng một
+                  ngày đầy ắp những gợi ý cho chuyến đi hoàn hảo, cùng nhóm bạn
+                  “tái tạo” lại năng lượng để quay về học tập – làm việc nhé!
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="tour-blog-item">
+            <a href="#">
+              <div class="blog-image">
+                <img
+                  src="./images/patrick-adcock-QG2ndAiyQ38-unsplash.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="blog-content">
+                <h2 class="blog-title">
+                  Cẩm nang du lịch Đà Nẵng một ngày cho hội bạn vui chơi "sập"
+                  Đà thành
+                </h2>
+                <p class="blog-desc">
+                  Đà Nẵng có cả núi, đồng bằng và biển, chỉ nằm cách Hội An 30
+                  km. Bao quanh bởi hàng loạt điểm tham quan du lịch cũng như
+                  danh lam thắng cảnh nổi tiếng nên không khó hiểu vì sao nơi
+                  đây lại thu hút khách du lịch đến vậy. Dưới đây, Traveloka sẽ
+                  mang đến cho các bạn một “cuốn” cẩm nang du lịch Đà Nẵng một
+                  ngày đầy ắp những gợi ý cho chuyến đi hoàn hảo, cùng nhóm bạn
+                  “tái tạo” lại năng lượng để quay về học tập – làm việc nhé!
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="tour-blog-item">
+            <a href="#">
+              <div class="blog-image">
+                <img
+                  src="./images/patrick-adcock-QG2ndAiyQ38-unsplash.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="blog-content">
+                <h2 class="blog-title">
+                  Cẩm nang du lịch Đà Nẵng một ngày cho hội bạn vui chơi "sập"
+                  Đà thành
+                </h2>
+                <p class="blog-desc">
+                  Đà Nẵng có cả núi, đồng bằng và biển, chỉ nằm cách Hội An 30
+                  km. Bao quanh bởi hàng loạt điểm tham quan du lịch cũng như
+                  danh lam thắng cảnh nổi tiếng nên không khó hiểu vì sao nơi
+                  đây lại thu hút khách du lịch đến vậy. Dưới đây, Traveloka sẽ
+                  mang đến cho các bạn một “cuốn” cẩm nang du lịch Đà Nẵng một
+                  ngày đầy ắp những gợi ý cho chuyến đi hoàn hảo, cùng nhóm bạn
+                  “tái tạo” lại năng lượng để quay về học tập – làm việc nhé!
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="tour-blog-item">
+            <a href="#">
+              <div class="blog-image">
+                <img
+                  src="./images/patrick-adcock-QG2ndAiyQ38-unsplash.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="blog-content">
+                <h2 class="blog-title">
+                  Cẩm nang du lịch Đà Nẵng một ngày cho hội bạn vui chơi "sập"
+                  Đà thành
+                </h2>
+                <p class="blog-desc">
+                  Đà Nẵng có cả núi, đồng bằng và biển, chỉ nằm cách Hội An 30
+                  km. Bao quanh bởi hàng loạt điểm tham quan du lịch cũng như
+                  danh lam thắng cảnh nổi tiếng nên không khó hiểu vì sao nơi
+                  đây lại thu hút khách du lịch đến vậy. Dưới đây, Traveloka sẽ
+                  mang đến cho các bạn một “cuốn” cẩm nang du lịch Đà Nẵng một
+                  ngày đầy ắp những gợi ý cho chuyến đi hoàn hảo, cùng nhóm bạn
+                  “tái tạo” lại năng lượng để quay về học tập – làm việc nhé!
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="tour-blog-item">
+            <a href="#">
+              <div class="blog-image">
+                <img
+                  src="./images/patrick-adcock-QG2ndAiyQ38-unsplash.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="blog-content">
+                <h2 class="blog-title">
+                  Cẩm nang du lịch Đà Nẵng một ngày cho hội bạn vui chơi "sập"
+                  Đà thành
+                </h2>
+                <p class="blog-desc">
+                  Đà Nẵng có cả núi, đồng bằng và biển, chỉ nằm cách Hội An 30
+                  km. Bao quanh bởi hàng loạt điểm tham quan du lịch cũng như
+                  danh lam thắng cảnh nổi tiếng nên không khó hiểu vì sao nơi
+                  đây lại thu hút khách du lịch đến vậy. Dưới đây, Traveloka sẽ
+                  mang đến cho các bạn một “cuốn” cẩm nang du lịch Đà Nẵng một
+                  ngày đầy ắp những gợi ý cho chuyến đi hoàn hảo, cùng nhóm bạn
+                  “tái tạo” lại năng lượng để quay về học tập – làm việc nhé!
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="tour-more">
+          <a href="#">Xem tất cả tin tức</a>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="subscribe-areas">
+        <div class="container">
+          <div class="subscribe-area">
+            <div class="subscribe-area1">
+              <ul class="social">
+                <li class="fb">
+                  <a href="facebook.com" target="_blank"
+                    ><i class="fa-brands fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li class="tw">
+                  <a href="twitter.com" target="_blank"
+                    ><i class="fa-brands fa-twitter"></i
+                  ></a>
+                </li>
+                <li class="yt">
+                  <a href="youtube.com" target="_blank"
+                    ><i class="fa-brands fa-youtube"></i
+                  ></a>
+                </li>
+                <li class="ins">
+                  <a href="instagram.com" target="_blank"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="subscribe-area2">
+              <h2>ĐĂNG KÝ NHẬN TIN</h2>
+              <p>Các deal du lịch giảm giá đến 60% sẽ được gửi đến bạn</p>
+            </div>
+            <div class="subscribe-area3">
+              <form action="" class="subscribe-form" method="post">
+                <div class="subscribe-email">
+                  <input type="text" required placeholder="Địa chỉ Email" />
+                  <button type="submit">Đăng ký</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-footer">
+        <div class="container">
+          <div class="footer-main">
+            <div class="footer-left">
+              <a href="index.html" class="footer-logo">
+                <img src="./images/fot_logo.png" alt="" />
+              </a>
+              <ul class="footer-contact-info">
+                <li>
+                  <span>Địa chỉ:</span>
+                  70 Lu Gia, Ward 15, District 11, Ho Chi Minh City
+                </li>
+                <li>
+                  <span>Email:</span>
+                  <a href="mailto:lequy11082003@gmail.com">
+                    supportevotour@evotour.vn
+                  </a>
+                </li>
+                <li>
+                  <span>Điện thoại:</span>
+                  <a href="tel:0867717002">1900 6750</a>
+                </li>
+                <li>
+                  <span>Zalo:</span>
+                  <a href="https://chat.zalo.me/">1900 6750</a>
+                </li>
+                <li>
+                  Giấy phép kinh doanh số 0000000000 do sở KH&ĐT TP Hà Nội cấp
+                  ngày 00/00/0000
+                </li>
+              </ul>
+              <div class="footer-payment">
+                <img src="./images/payment_1.svg" alt="" />
+                <img src="./images/payment_2.svg" alt="" />
+                <img src="./images/payment_4.svg" alt="" />
+                <img src="./images/payment_5.svg" alt="" />
+              </div>
+            </div>
+            <div class="footer-right">
+              <div class="footer-right-item">
+                <h3>Evo Tour</h3>
+                <ul class="footer-quick-links">
+                  <li><a href="index.html">Trang chủ</a></li>
+                  <li><a href="#">Giới thiệu</a></li>
+                  <li><a href="#">Tour du lịch</a></li>
+                  <li><a href="#">Tour khuyến mãi</a></li>
+                  <li><a href="#">Tin tức</a></li>
+                  <li><a href="#">Kinh nghiệm du lịch</a></li>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Liên hệ</a></li>
+                </ul>
+              </div>
+              <div class="footer-right-item">
+                <h3>Tour Miền Bắc</h3>
+                <ul class="footer-quick-links">
+                  <li><a href="#">Sapa</a></li>
+                  <li><a href="#">Hà Giang</a></li>
+                  <li><a href="#">Cao Bằng - Bắc Kan</a></li>
+                  <li><a href="#">Mai Châu - Mộc Châu</a></li>
+                  <li><a href="#">Yên Bái</a></li>
+                  <li><a href="#">Ninh Bình</a></li>
+                  <li><a href="#">Hạ Long</a></li>
+                  <li><a href="#">Cát Bà</a></li>
+                </ul>
+              </div>
+              <div class="footer-right-item">
+                <h3>Tour Miền Nam</h3>
+                <ul class="footer-quick-links">
+                  <li><a href="#">Phú Quốc</a></li>
+                  <li><a href="#">Côn Đảo</a></li>
+                  <li><a href="#">Bến Tre</a></li>
+                  <li><a href="#">Cần Thơ</a></li>
+                  <li><a href="#">Cà Mau</a></li>
+                  <li><a href="#">Hà Tiên</a></li>
+                  <li><a href="#">Kiên Giang</a></li>
+                  <li><a href="#">Nam Du</a></li>
+                </ul>
+              </div>
+              <div class="footer-right-item">
+                <h3>Tour Quốc Tế</h3>
+                <ul class="footer-quick-links">
+                  <li><a href="#">Đông Nam Á</a></li>
+                  <li><a href="#">Đông Bắc Á</a></li>
+                  <li><a href="#">Ấn Độ - Nam Á</a></li>
+                  <li><a href="#">Châu Âu</a></li>
+                  <li><a href="#">Châu Úc</a></li>
+                  <li><a href="#">Châu Phi</a></li>
+                  <li><a href="#">Châu Mỹ</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- JS -->
+    <script src="./js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+      flatpickr("#banner-date", {
+        dateFormat: "d/m/Y",
+      });
+    </script>
+  </body>
+</html>

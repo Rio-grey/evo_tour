@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Evo Tour</title>
+    <script
+      src="https://kit.fontawesome.com/91fe53bdda.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://npmcdn.com/flatpickr/dist/themes/material_blue.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/tour_khuyen_mai.css" />
+    <link rel="stylesheet" href="./css/dang_ky.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-top">
+          <div class="header-logo">
+            <a href="index.html"><img src="./images/logo.png" alt="" /></a>
+          </div>
+          <form action="" method="post" class="header-searchs">
+            <div class="header-search">
+              <input type="text" />
+              <button type="submit">
+                <ion-icon name="search-outline"></ion-icon>
+              </button>
+            </div>
+          </form>
+          <div class="header-user">
+            <div class="evo-acount">
+              <a href="#">
+                <ion-icon name="person-outline" class="person"></ion-icon>
+                <span>Tài khoản</span>
+              </a>
+              <ul>
+                <li>
+                  <a href="">Đăng nhập</a>
+                </li>
+                <li>
+                  <a href="">Đăng ký</a>
+                </li>
+              </ul>
+            </div>
+            <div class="evo-heart">
+              <a href="#">
+                <ion-icon name="heart-outline" class="heart"></ion-icon>
+                <span>Yêu thích</span>
+                <span class="quantity-icon">0</span>
+              </a>
+              <div class="top-wish-list-content">
+                <div class="added-products">
+                  <span class="favorites-message">
+                    Những tour thích <span class="favorites-count">(0)</span>
+                  </span>
+                  <div class="wish-list-small">
+                    <div class="emty-description">
+                      <span class="emty-icon">
+                        <i class="ico ico-favorite-heart"></i>
+                      </span>
+                      <div class="emty-text">
+                        <h3>
+                          Tour nào của chúng tôi bạn mong muốn sở hữu nhất?
+                        </h3>
+                        <p>Hãy thêm vào danh sách Tour yêu thích ngay nhé!</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#">
+              <ion-icon name="cart-outline" class="cart"></ion-icon>
+              <span class="quantity-icon">0</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header-menu">
+        <div class="container">
+          <ul class="menu">
+            <li class="menu-item">
+              <a href="index.html" class="menu-link">TRANG CHỦ</a>
+            </li>
+            <li class="menu-item">
+              <a href="about.html" class="menu-link">GIỚI THIỆU</a>
+            </li>
+            <li class="menu-item">
+              <a href="tour_du_lich.html" class="menu-link">TOUR DU LỊCH</a>
+              <!-- <div class="menu-mega">
+                <ul class="menu-child">
+                  <li class="menu-child-item">
+                    <a href="#" class="menu-child-title">Tour trong nước</a>
+                    <div class="">
+                      <ul>
+                        <li class="">
+                          <a href="#">Miền Bắc</a>
+                          <ul>
+                            <li><a href="#">Sapa</a></li>
+                            <li><a href="#">Hà Giang</a></li>
+                            <li><a href="#">Cao Bằng - Bắc Kạn</a></li>
+                            <li><a href="#">Mai Châu - Mộc Châu</a></li>
+                            <li><a href="#">Yên Bái</a></li>
+                            <li><a href="#">Ninh Bình</a></li>
+                            <li><a href="#">Hạ Long</a></li>
+                            <li><a href="#">Cát Bà</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div> -->
+            </li>
+            <li class="menu-item">
+              <a href="tour_khuyen_mai.html" class="menu-link">
+                TOUR KHUYẾN MÃI
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="tin_tuc.html" class="menu-link"
+                >TIN TỨC & KINH NGHIỆM DU LỊCH</a
+              >
+            </li>
+            <li class="menu-item">
+              <a href="FAQ.html" class="menu-link">FAQ</a>
+            </li>
+            <li class="menu-item">
+              <a href="contact.html" class="menu-link">LIÊN HỆ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="bread-crumb">
+      <div class="container">
+        <ul>
+          <li>
+            <a href="index.html">Trang chủ</a>
+          </li>
+          <li class="cheo">/</li>
+          <li>Đăng nhập tài khoản</li>
+        </ul>
+      </div>
+    </section>
+    <section class="login">
+      <div class="container">
+        <div class="page-login">
+          <div class="account-banner">
+            <!-- <img src="./images/account-banner.png" alt="" /> -->
+            <div class="account_policy_title">Quyền lợi thành viên</div>
+            <div class="account_policy_content">
+              <p>Tour chọn lọc chất lượng nhất</p>
+              <p>Đội ngũ tư vấn chi tiết và tận tình</p>
+              <p>Nhận nhiều chương trình ưu đãi hấp dẫn từ chúng tôi</p>
+            </div>
+          </div>
+          <div class="account-login">
+            <ul class="auth-block__menu-list">
+              <li class="active">
+                <a href="#" title="Đăng nhập">Đăng nhập</a>
+              </li>
+              <li>
+                <a href="#" title="Đăng ký">Đăng ký</a>
+              </li>
+            </ul>
+            <form action="" method="post" class="form-login">
+              <div class="form-signup">
+                <div class="form-group">
+                  <label>Email<span class="required">*</span></label>
+                  <input
+                    placeholder="Nhập Địa chỉ Email"
+                    type="email"
+                    class="form-control form-control-lg"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$"
+                    name="email"
+                    required=""
+                  />
+                </div>
+                <div class="form-group">
+                  <label>Mật khẩu<span class="required">*</span></label>
+                  <input
+                    placeholder="Nhập Mật khẩu"
+                    type="password"
+                    class="form-control form-control-lg"
+                    name="password"
+                    required=""
+                  />
+                </div>
+                <p class="">
+                  <a href="miss_password.html" class="miss-password"
+                    >Quên mật khẩu?</a
+                  >
+                </p>
+                <button type="submit" class="btn-blues">Đăng nhập</button>
+                <p class="login--notes">
+                  Evo Tour cam kết bảo mật và sẽ không bao giờ đăng <br />hay
+                  chia sẻ thông tin mà chưa có được sự đồng ý của bạn.
+                </p>
+              </div>
+            </form>
+            <div class="line-break">
+              <span>hoặc đăng nhập qua</span>
+            </div>
+            <div class="social-login">
+              <script>
+                function loginFacebook() {
+                  var a = {
+                      client_id: "947410958642584",
+                      redirect_uri:
+                        "https://store.mysapo.net/account/facebook_account_callback",
+                      state: JSON.stringify({
+                        redirect_url: window.location.href,
+                      }),
+                      scope: "email",
+                      response_type: "code",
+                    },
+                    b =
+                      "https://www.facebook.com/v3.2/dialog/oauth" +
+                      encodeURIParams(a, !0);
+                  window.location.href = b;
+                }
+                function loginGoogle() {
+                  var a = {
+                      client_id:
+                        "997675985899-pu3vhvc2rngfcuqgh5ddgt7mpibgrasr.apps.googleusercontent.com",
+                      redirect_uri:
+                        "https://store.mysapo.net/account/google_account_callback",
+                      scope:
+                        "email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile",
+                      access_type: "online",
+                      state: JSON.stringify({
+                        redirect_url: window.location.href,
+                      }),
+                      response_type: "code",
+                    },
+                    b =
+                      "https://accounts.google.com/o/oauth2/v2/auth" +
+                      encodeURIParams(a, !0);
+                  window.location.href = b;
+                }
+                function encodeURIParams(a, b) {
+                  var c = [];
+                  for (var d in a)
+                    if (a.hasOwnProperty(d)) {
+                      var e = a[d];
+                      null != e &&
+                        c.push(
+                          encodeURIComponent(d) + "=" + encodeURIComponent(e)
+                        );
+                    }
+                  return 0 == c.length ? "" : (b ? "?" : "") + c.join("&");
+                }
+              </script>
+              <a
+                href="javascript:void(0)"
+                class="social-login--facebook"
+                onclick="loginFacebook()"
+                ><img
+                  width="129px"
+                  height="37px"
+                  alt="facebook-login-button"
+                  src="//bizweb.dktcdn.net/assets/admin/images/login/fb-btn.svg"
+              /></a>
+              <a
+                href="javascript:void(0)"
+                class="social-login--google"
+                onclick="loginGoogle()"
+                ><img
+                  width="129px"
+                  height="37px"
+                  alt="google-login-button"
+                  src="//bizweb.dktcdn.net/assets/admin/images/login/gp-btn.svg"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="subscribe-areas">
+        <div class="container">
+          <div class="subscribe-area">
+            <div class="subscribe-area1">
+              <ul class="social">
+                <li class="fb">
+                  <a href="facebook.com" target="_blank"
+                    ><i class="fa-brands fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li class="tw">
+                  <a href="twitter.com" target="_blank"
+                    ><i class="fa-brands fa-twitter"></i
+                  ></a>
+                </li>
+                <li class="yt">
+                  <a href="youtube.com" target="_blank"
+                    ><i class="fa-brands fa-youtube"></i
+                  ></a>
+                </li>
+                <li class="ins">
+                  <a href="instagram.com" target="_blank"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="subscribe-area2">
+              <h2>ĐĂNG KÝ NHẬN TIN</h2>
+              <p>Các deal du lịch giảm giá đến 60% sẽ được gửi đến bạn</p>
+            </div>
+            <div class="subscribe-area3">
+              <form action="" class="subscribe-form" method="post">
+                <div class="subscribe-email">
+                  <input type="text" required placeholder="Địa chỉ Email" />
+                  <button type="submit">Đăng ký</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-footer">
+        <div class="container">
+          <div class="footer-main">
+            <div class="footer-left">
+              <a href="index.html" class="footer-logo">
+                <img src="./images/fot_logo.png" alt="" />
+              </a>
+              <ul class="footer-contact-info">
+                <li>
+                  <span>Địa chỉ:</span>
+                  70 Lu Gia, Ward 15, District 11, Ho Chi Minh City
+                </li>
+                <li>
+                  <span>Email:</span>
+                  <a href="mailto:lequy11082003@gmail.com">
+                    supportevotour@evotour.vn
+                  </a>
+                </li>
+                <li>
+                  <span>Điện thoại:</span>
+                  <a href="tel:0867717002">1900 6750</a>
+                </li>
+                <li>
+                  <span>Zalo:</span>
+                  <a href="https://chat.zalo.me/">1900 6750</a>
+                </li>
+                <li>
+                  Giấy phép kinh doanh số 0000000000 do sở KH&ĐT TP Hà Nội cấp
+                  ngày 00/00/0000
+                </li>
+              </ul>
+              <div class="footer-payment">
+                <img src="./images/payment_1.svg" alt="" />
+                <img src="./images/payment_2.svg" alt="" />
+                <img src="./images/payment_4.svg" alt="" />
+                <img src="./images/payment_5.svg" alt="" />
+              </div>
+            </div>
+            <div class="footer-right">
+              <div class="footer-right-item">
+                <h3>Evo Tour</h3>
+                <ul class="footer-quick-links">
+                  <li><a href="index.html">Trang chủ</a></li>
+                  <li><a href="#">Giới thiệu</a></li>
+                  <li><a href="#">Tour du lịch</a></li>
+                  <li><a href="#">Tour khuyến mãi</a></li>
+                  <li><a href="#">Tin tức</a></li>
+                  <li><a href="#">Kinh nghiệm du lịch</a></li>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Liên hệ</a></li>
+                </ul>
+              </div>
+              <div class="footer-right-item">
+                <h3>Tour Miền Bắc</h3>
+                <ul class="footer-quick-links">
+                  <li><a href="#">Sapa</a></li>
+                  <li><a href="#">Hà Giang</a></li>
+                  <li><a href="#">Cao Bằng - Bắc Kan</a></li>
+                  <li><a href="#">Mai Châu - Mộc Châu</a></li>
+                  <li><a href="#">Yên Bái</a></li>
+                  <li><a href="#">Ninh Bình</a></li>
+                  <li><a href="#">Hạ Long</a></li>
+                  <li><a href="#">Cát Bà</a></li>
+                </ul>
+              </div>
+              <div class="footer-right-item">
+                <h3>Tour Miền Nam</h3>
+                <ul class="footer-quick-links">
+                  <li><a href="#">Phú Quốc</a></li>
+                  <li><a href="#">Côn Đảo</a></li>
+                  <li><a href="#">Bến Tre</a></li>
+                  <li><a href="#">Cần Thơ</a></li>
+                  <li><a href="#">Cà Mau</a></li>
+                  <li><a href="#">Hà Tiên</a></li>
+                  <li><a href="#">Kiên Giang</a></li>
+                  <li><a href="#">Nam Du</a></li>
+                </ul>
+              </div>
+              <div class="footer-right-item">
+                <h3>Tour Quốc Tế</h3>
+                <ul class="footer-quick-links">
+                  <li><a href="#">Đông Nam Á</a></li>
+                  <li><a href="#">Đông Bắc Á</a></li>
+                  <li><a href="#">Ấn Độ - Nam Á</a></li>
+                  <li><a href="#">Châu Âu</a></li>
+                  <li><a href="#">Châu Úc</a></li>
+                  <li><a href="#">Châu Phi</a></li>
+                  <li><a href="#">Châu Mỹ</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

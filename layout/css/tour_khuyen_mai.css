@@ -1,0 +1,128 @@
+.cat-banner a img {
+  max-width: 100%;
+  height: auto;
+}
+.search-all {
+  margin-bottom: 20px;
+}
+.search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0 0 4px 4px;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-top: -5px;
+}
+.group-a img,
+.group-b img,
+.group-c img {
+  width: 35px;
+  margin-right: 20px;
+}
+.group-a,
+.group-b,
+.group-c {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  border-radius: 4px;
+  cursor: pointer;
+  background: #fff;
+  transition: all 0.3s linear;
+  user-select: none;
+  color: #494b55;
+  box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+  padding-left: 10px;
+}
+.group-b {
+  padding-right: 10px;
+}
+.group-a input {
+  width: 360px;
+  margin-bottom: 0;
+  border: none;
+  font-size: 17px;
+  color: #494b55;
+  padding-right: 20px;
+}
+.bread-crumb {
+  border-top: 1px solid #ccc;
+  padding: 18px 0;
+  font-size: 14px;
+  background-color: #f3f5f7;
+}
+.bread-crumb ul {
+  display: flex;
+  gap: 0 8px;
+}
+.bread-crumb ul li:not(.cheo) {
+  color: #1ba0e2;
+}
+.bread-crumb ul li a {
+  color: black;
+}
+.sort-cate {
+  padding: 20px 10px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  font-size: 14px;
+}
+.sort-left {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+}
+.sort-left h3 {
+  font-weight: 500;
+}
+.sort-left form {
+  display: flex;
+  gap: 0 20px;
+  align-items: center;
+}
+.sort-left form li {
+  display: flex;
+  gap: 0 5px;
+}
+.title-search h1 {
+  font-size: 22px;
+  line-height: 28px;
+  margin: 25px 0 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.title-search h5 {
+  margin-bottom: 10px;
+}
+.form-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-search input {
+  width: 543px;
+  padding: 7px 20px;
+  border: 1px solid #e5e5e5;
+  color: #999;
+}
+.form-search button {
+  color: white;
+  border: none;
+  outline: none;
+  background-color: #1ba0e2;
+  padding: 8px 20px;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.alert-warning {
+  background-color: rgb(224, 224, 0);
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+}

@@ -1,0 +1,244 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+body {
+  line-height: 1.7;
+  letter-spacing: 0.25px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  outline: none;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+a {
+  text-decoration: none;
+}
+.wrapper {
+  max-width: 1253px;
+  margin: 0 auto;
+}
+.logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.logo a {
+  font-weight: 400;
+  color: #2196f3;
+  font-size: 30px;
+}
+.bill-form {
+  display: flex;
+  justify-content: space-between;
+}
+.form-group {
+  margin-bottom: 10px;
+}
+.form-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0 116px;
+  margin-bottom: 8px;
+}
+.form-title h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+.dang-nhap a {
+  display: flex;
+  align-items: center;
+  gap: 0 5px;
+}
+.dang-nhap i {
+  font-size: 20px;
+  color: #2196f3;
+}
+.dang-nhap span {
+  color: #2196f3;
+}
+.form-control {
+  padding: 10px;
+  font-size: 14px;
+}
+.alert-info {
+  background-color: #d1ecf1;
+  color: #2196f3;
+  padding: 9px;
+}
+.form-check {
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  padding: 13px 20px 13px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0 90px;
+}
+.form-check i {
+  font-size: 20px;
+  color: #2196f3;
+}
+.form-check-label {
+  color: #545454;
+}
+.info-order {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 30px;
+}
+.order {
+  height: 100vh;
+  background-color: #fafafa;
+  box-shadow: 1px 0 0 #e1e1e1 inset;
+}
+.sidebar-header {
+  padding: 20px 28px;
+  border-bottom: 1px solid #e1e1e1;
+}
+.sidebar-title {
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+.sidebar-content {
+  padding: 20px 0px 0px 28px;
+}
+.order-summary-list {
+  overflow-y: auto;
+  max-height: calc(100vh - 480px);
+  border-bottom: 1px solid #e1e1e1;
+}
+.product-table {
+  margin-bottom: 15px;
+  width: 100%;
+}
+.product__image {
+  padding-right: 15px;
+}
+.product__description {
+  padding-right: 40px;
+}
+.product-thumbnail {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  background: #fff;
+  position: relative;
+}
+.product-thumbnail__wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.product-thumbnail__wrapper img {
+  width: 50px;
+  height: 35px;
+}
+.product-thumbnail__quantity {
+  font-size: 12px;
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2a9dcc;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 100rem;
+  margin: 5px auto 0;
+}
+.product__description span {
+  max-width: 198px;
+  display: block;
+}
+.product__description__property {
+  font-size: 0.85em;
+  color: #969696;
+}
+.product__price {
+  color: #717171;
+}
+.voucher {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 15px 0 5px;
+  border-bottom: 1px solid #e1e1e1;
+}
+.voucher-input {
+  width: 266px;
+}
+.voucher-btn {
+  font-size: 14px;
+  padding: 10px 22px;
+}
+.total-line {
+  color: #717171;
+  padding: 20px 0 10px;
+  border-bottom: 1px solid #e1e1e1;
+}
+.total-line__shipping,
+.total-line__subtotal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 7px;
+}
+.total-line__payment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+.total-line__payment__name {
+  color: #717171;
+  font-size: 18px;
+}
+.total-line__payment__price {
+  font-size: 22px;
+  color: #2196f3;
+}
+.book-now a {
+  display: flex;
+  align-items: center;
+  gap: 0 1px;
+  color: #2196f3;
+}
+.book-now .btn-primary {
+  padding: 10px 25px;
+}
+.book-now {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
